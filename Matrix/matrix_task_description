@@ -1,0 +1,17 @@
+Task description
+matrix
+As part of this task, you will implement the Matrix<size_t N, size_t M, typename T = int64_t> class - a matrix class with specified sizes and element types at the compilation stage.
+
+In this task, it is forbidden to use the words static_assert and constexpr, if you suddenly know this.
+
+Operations that must be supported on a matrix:
+The default constructor fills the matrix T().
+A constructor from std::vector<std::vector<T>> that fills a matrix with vector elements. It is guaranteed that the dimensions of the vector will match the dimensions in the templates.
+Constructor from T elem. Fills the entire elem matrix.
+Addition, subtraction, operators +=, -=. Adding and subtracting matrices of inappropriate sizes should not compile. It is guaranteed that the types in the matrices in the tests will support the appropriate operations.
+Multiplication by an element of type T (it is guaranteed that operator * is defined for T)
+Multiplication of two matrices. Attempting to multiply matrices of inappropriate sizes should result in a compilation error.
+The Transposed() method, which returns the transposed matrix.
+The Trace() method - calculate the trace of a matrix. Calculating the trace from a non-square matrix should not compile. Think how to implement it!
+Operator (i, j) returning the matrix element in the i-th row and in the j-th column. It is necessary to be able to change the value for non-constant matrices.
+Equality operator.
