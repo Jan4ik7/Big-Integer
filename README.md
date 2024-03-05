@@ -1,2 +1,2 @@
 # Introduction-to-C-and-OOP-MIPT
-Big Integer
+Tasks that we did 1-st and 2-nd semesters. 
